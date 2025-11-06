@@ -84,17 +84,17 @@ int main() {
                 break;
 
             case 6:
-                printf("Nhap vi tri xoa (0-%d): ", n - 1);
-                scanf("%d", &pos);
-                if (pos < 0 || pos >= n) {
-                    printf("Vi tri khong hop le\n");
-                } else {
-                    for (i = pos; i < n - 1; i++) {
-                        a[i] = a[i + 1];
-                    }
-                    n--;
-                }
-                break;
+                   printf("Nhap vi tri xoa (tu 0 den vi tri cuoi cua mang): ");
+                   scanf("%d", &pos);
+                   if (pos < 0 || pos >= n) {
+                       printf("Vi tri khong hop le\n");
+                   } else {
+                      for (i = pos; i < n - 1; i++) {
+                           a[i] = a[i + 1];
+                      }
+                     n--;
+                   }
+                     break;
 
             case 7:
                 for (i = 0; i < n - 1; i++) {
@@ -120,3 +120,4 @@ int main() {
 
     return 0;
 }
+
