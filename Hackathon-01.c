@@ -84,7 +84,7 @@ int main() {
                 break;
 
             case 6:
-                   printf("Nhap vi tri xoa (tu 0 den vi tri cuoi cua mang): ");
+                   printf("Nhap vi tri xoa: ");
                    scanf("%d", &pos);
                    if (pos < 0 || pos >= n) {
                        printf("Vi tri khong hop le\n");
@@ -120,4 +120,5 @@ int main() {
 
     return 0;
 }
+
 
